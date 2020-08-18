@@ -1,0 +1,47 @@
+# YAML is a data serialization language 
+# just to store infomation like variables, list, objects like json
+# redability and user friendly
+# comment
+# extensions .yml or yaml
+# works without quotes
+
+
+person:              # obeject
+    name: &name 'prashant'       # Key value pair
+    occupation: "programmer"
+    age: 23                      # !!str 23  == "23"
+    male: True          # yes/no on/off
+    birthday: 1995-2-25 12:45:20  # ISO 8601
+    flaws: null
+    hobbies:                # list 
+        - travelling       # list items by dash
+        - movies
+    movies: ["rnbdj", "dev d"]    # list another way
+    
+    friends:
+        - name: 'sud'     # objects list
+          class: 'std'
+        - {name:'sud', class:'std'}   # object list another way
+        -                   # object list another way
+          name: 'sud'     
+          class: 'std'
+    
+    description: >  # render as a single line
+        mkskfdsklfdsf,
+        fsklfdsklf.
+        fklsdflk,
+    signature: |    # preserve formatting
+        prasahnt
+        879784
+        
+    id: *name # take the value of anchor
+    
+    base: &base
+        value: "abcd"
+        
+    foo: 
+        <<: *base    # anchoring entire value
+        
+         
+         
+    
