@@ -1,0 +1,37 @@
+# extension .json
+# JSON  - JavaScripts Object Notation
+
+# Key value pairs
+{
+    "name": "prashant",  # string         
+    "age": 23,   # int
+    "gpa": 3.5,   #float
+    "male": true,
+    "flaws": null
+    
+}
+
+# object
+
+{"person": {
+    "name": "prashant",  
+    "age": 23,   # int
+    "gpa": 3.5,   #float
+    "male": true,
+    "flaws": null,
+    "hobbies":["a", "b"],   # list
+     
+     "friends":[            # object list
+                 { 
+                     "male": true,
+                    "flaws": null
+                 },
+                   { 
+                     "male": true,
+                    "flaws": null
+                    },
+
+                 ]
+            }
+    
+}
